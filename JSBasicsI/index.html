@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Basic 1
+        let x = [];
+        console.log(x); // []
+        x.push("coding", "dojo", "rocks");
+        x.pop();
+        console.log(x); // ["coding", "dojo"]
+
+        // Basic 2
+        const y = [];
+        console.log(y); // []
+        y.push(88);
+        console.log(y); // [88]; value still added because it is not being reassigned.
+
+        // Basic 3
+        let z = [9, 10, 6, 5, -1, 20, 13, 2];
+        console.log(z);
+        for(var i = 0; i < z.length; i++) {
+            console.log(z[i]); // every element
+        }
+
+        for(var j = 0; j < z.length - 1; j++) {
+            console.log(z[i]); // every element except for last one
+        }
+
+        // Basic 4
+        let names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+        for(var k = 0; k < names.length; k++) {
+            console.log(names[k].length); // length of all names
+            
+            if(names[k].length == 5) {
+                console.log(names[k]) // names with a length of 5
+            }
+        }
+
+        // Basic 5
+        function yell(string) {
+            return string.toUpperCase();
+        }
+
+        let yellStr = yell("johnny");
+        console.log(yellStr);
+        // w3schools.com, developer.mozilla.org
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Challenge 1
+        let students = [
+        {name: 'Remy', cohort: 'Jan'},
+        {name: 'Genevieve', cohort: 'March'},
+        {name: 'Chuck', cohort: 'Jan'},
+        {name: 'Osmund', cohort: 'June'},
+        {name: 'Nikki', cohort: 'June'},
+        {name: 'Boris', cohort: 'June'}
+        ];
+
+        for(let student in students) {
+            console.log("Name: " + students[student].name + ", Cohort: " + students[student].cohort);
+        }
+
+        //Challenge 2
+        let users = {
+            employees: [
+                {'first_name':  'Miguel', 'last_name' : 'Jones'},
+                {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+                {'first_name' : 'Nora', 'last_name' : 'Lu'},
+                {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+            ],
+            managers: [
+                {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+                {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+            ]
+        };
+
+        console.log("EMPLOYEES")
+        let employeeCount = 0;
+
+        for (let employee in users.employees) {
+        employeeCount++;
+        console.log(employeeCount + " - " + users.employees[employee].last_name.toUpperCase() + ", " + users.employees[employee].first_name.toUpperCase())
+        }
+
+        console.log("MANAGERS")
+        let managerCount = 0;
+        for (let manager in users.managers) {
+            managerCount++;
+            console.log(managerCount + " - " + users.managers[manager].last_name.toUpperCase() + ", " + users.managers[manager].first_name.toUpperCase());
+        }
+
+    </script>
+</body>
+</html>
